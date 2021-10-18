@@ -15,3 +15,9 @@ doSomething();
 //ES 5 and later don't use let key word so it is changed when running tsc to var
 
 //only use VAR key word
+
+//enum
+
+enum Color {Red = 0, Green = 1, Blue = 2}; 
+
+let backgroundColor = Color.Red;
