@@ -21,3 +21,13 @@ doSomething();
 enum Color {Red = 0, Green = 1, Blue = 2}; 
 
 let backgroundColor = Color.Red;
+
+//type assertions
+
+ let messages; //assigned as type any will not allow functions to be called so must be cast as string or converted
+ messages = 'abc';
+
+ let endsWithC = (<string>messages).endsWith('c'); //casts as string, ends with method returns a boolean
+ let alternativeWay = (message as string).endsWith('c');//converts to string in function and returns boolean //only changes it to allow intellisense to understand what way to acces the variable type but does no specific conversion of the variable
+
+ 
