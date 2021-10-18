@@ -30,4 +30,16 @@ let backgroundColor = Color.Red;
  let endsWithC = (<string>messages).endsWith('c'); //casts as string, ends with method returns a boolean
  let alternativeWay = (message as string).endsWith('c');//converts to string in function and returns boolean //only changes it to allow intellisense to understand what way to acces the variable type but does no specific conversion of the variable
 
- 
+ //arrow functions or in C# is referred to as a lambda expression
+
+ let log(message){
+     console.log(message);
+ }
+
+ //or written as arrow function
+
+ let doLog(message)=>console.log(message);//if you only have one parameter you can omit the parenthesis as well//or if not parameters you can simply put empty parenthesis 
+ //or
+//  let doLog(message)=>{
+//      console.log(message); if you only have one line of code you don't need curly braces
+//  }
