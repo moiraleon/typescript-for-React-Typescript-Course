@@ -130,7 +130,16 @@ class Point{
         console.log('X: '+this.x +', Y: '+this.y)
     }
 
+    get X(){
+        return this.x;
+    }
 
+    set X(value){
+        if (value<0)
+            throw new Error('Value can not be less than 0.');
+            this.x = value;
+        
+    }
 }
 
 let point =  new Point(1,2);
@@ -155,3 +164,15 @@ point.draw();
 // constructor(private x?:number, private y? :number){
 // }
 //this will generate and initialize the fields as the value of the arguments
+
+
+//PROPERTIES
+
+//GETTERS AND SETTERS
+//get x and set x methods
+
+//let x = point.getX();//can be simplified
+let x = point.X;
+point.X = 10;
+
+//a property looks like a field in the class but it is a method
