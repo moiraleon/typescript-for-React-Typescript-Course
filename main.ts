@@ -84,27 +84,57 @@
 
 //we can't add actual code in an interface but we can make a declaration of what can access the interface what we call the signature of a function
 
-class Point{
-//fields
-x:number;
-y:number;
+// class Point{
+// //fields
+// x:number;
+// y:number;
 
-//methods
+// //methods
 
-draw(){
-    console.log('X: '+this.x +', Y: '+this.y)
-}
+// draw(){
+//     console.log('X: '+this.x +', Y: '+this.y)
+// }
 
-getDistance(another:Point){
-    //...
-}
+// getDistance(another:Point){
+//     //...
+// }
 
 
-} 
+// } 
 
 // let point: Point = new Point();
-let point =  new Point(); //point is an instance of the class Point
-point.x =1;
-point.y =2;
+// let point =  new Point(); //point is an instance of the class Point
+// point.x =1;
+// point.y =2;
+// point.draw();
+
+//constructors
+
+//is basically a method that is called when we make an instance of the class
+//adding a constructor allows us to simplify the code and calling of the method from the previous to the following\
+
+class Point{
+    //fields
+    x:number;
+    y:number;
+
+    //constructor
+    constructor(x?:number, y? :number){
+        x=this.x;
+        y=this.y;
+    }
+    
+    //methods
+    
+    draw(){
+        console.log('X: '+this.x +', Y: '+this.y)
+    }
+
+
+}
+
+let point =  new Point(1,2);
 point.draw();
 
+//C# can have multiple constructors but typescript can not so we can not pass an empty constructor but we can make the parameters optional//we add a ? after to make that it is optional
+//if you make one parameter optional ALL parameters to the right side should also be optional to make sure they do not pass into the wrong values
