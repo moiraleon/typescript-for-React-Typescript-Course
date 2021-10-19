@@ -69,4 +69,37 @@ let drawPoint2 =(point: {x:number, y:number})=>{
 
     let drawPoint3 = (point: Point)=>{}
 
-     
+
+    //additional problem
+
+    let getDistance =(pointA:Point, pointB: Point)=>{
+        //...
+    }
+
+//this violates the rule of cohesion to have all these functions spaced out like this
+
+     //CLASS 
+     //a class groups properties and functions that are highly related
+
+
+//we can't add actual code in an interface but we can make a declaration of what can access the interface what we call the signature of a function
+
+class PointClass{
+//fields
+x:number;
+y:number;
+
+//methods
+
+draw(){
+    //...
+}
+
+getDistance(another:Point){
+    //...
+}
+
+} 
+
+
+
