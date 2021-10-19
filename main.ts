@@ -1,3 +1,7 @@
+import{Point} from'./point';
+//on quotations included path to that file from the calling file
+//this is the information needed to move forward with angular framework
+
 // function logFunction(message) {
 //     console.log(message);
 // }
@@ -113,34 +117,34 @@
 //is basically a method that is called when we make an instance of the class
 //adding a constructor allows us to simplify the code and calling of the method from the previous to the following\
 
-class Point{
-    //fields
-   private x:number;
-   private y:number;
+// class Point{
+//     //fields
+//    private x:number;
+//    private y:number;
 
-    //constructor
-    constructor(x?:number, y? :number){
-        x=this.x;
-        y=this.y;
-    }
+//     //constructor
+//     constructor(x?:number, y? :number){
+//         x=this.x;
+//         y=this.y;
+//     }
     
-    //methods
+//     //methods
     
-    draw(){
-        console.log('X: '+this.x +', Y: '+this.y)
-    }
+//     draw(){
+//         console.log('X: '+this.x +', Y: '+this.y)
+//     }
 
-    get X(){
-        return this.x;
-    }
+//     get X(){
+//         return this.x;
+//     }
 
-    set X(value){
-        if (value<0)
-            throw new Error('Value can not be less than 0.');
-            this.x = value;
+//     set X(value){
+//         if (value<0)
+//             throw new Error('Value can not be less than 0.');
+//             this.x = value;
         
-    }
-}
+//     }
+// }
 
 let point =  new Point(1,2);
 point.draw();
@@ -172,7 +176,7 @@ point.draw();
 //get x and set x methods
 
 //let x = point.getX();//can be simplified
-let x = point.X;
-point.X = 10;
+// let x = point.X;
+// point.X = 10;
 
 //a property looks like a field in the class but it is a method
