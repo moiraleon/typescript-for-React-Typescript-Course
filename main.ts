@@ -43,3 +43,30 @@ let backgroundColor = Color.Red;
 //  let doLog(message)=>{
 //      console.log(message); if you only have one line of code you don't need curly braces
 //  }
+
+//INTERFACES
+
+
+let drawPoint =(point)=>{
+//...
+}
+//pass in an object as opposed to passing in multiple parameters
+drawPoint({
+    x=1,
+    y=2//to prevent passing in values of strings or incompatible we can do something called in line annotations in the parameters themselves
+})
+let drawPoint2 =(point: {x:number, y:number})=>{
+    //...
+    }
+    //however if we want to incorporate the point object into many problems we wouldn't want to type this out each time so we can create something called an interface
+
+
+    interface Point{ //capital P not lowercase because for interfaces we want to use Pascal naming convention which capitalizes all first letters
+        x:number,
+        y:number
+    }
+    //then you can pass in an interface by giving it a parameter name with its type just as before
+
+    let drawPoint3 = (point: Point)=>{}
+
+     
