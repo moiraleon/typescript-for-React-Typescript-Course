@@ -146,3 +146,12 @@ point.draw();
 //protected
 
 //once initialized values can not be modified
+
+
+//ACCESS MODIFIERS IN CONSTRUCTOR PARAMETERS
+
+//instead of initializing fields we can initialize them in the constructor as such
+
+// constructor(private x?:number, private y? :number){
+// }
+//this will generate and initialize the fields as the value of the arguments
