@@ -115,8 +115,8 @@
 
 class Point{
     //fields
-    x:number;
-    y:number;
+   private x:number;
+   private y:number;
 
     //constructor
     constructor(x?:number, y? :number){
@@ -138,3 +138,11 @@ point.draw();
 
 //C# can have multiple constructors but typescript can not so we can not pass an empty constructor but we can make the parameters optional//we add a ? after to make that it is optional
 //if you make one parameter optional ALL parameters to the right side should also be optional to make sure they do not pass into the wrong values
+
+
+//ACCESS MODIFIERS
+//public -default
+//private
+//protected
+
+//once initialized values can not be modified
